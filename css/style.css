@@ -12,6 +12,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
+  font-size: 20px;
 }
 
 /* =====================
@@ -127,6 +128,7 @@ a {
 
 
 /* gallery section */
+
 .gallery{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -136,6 +138,16 @@ a {
   border: 3px solid #a16916;
   height: 200px;
   width: 100%;
+}
+
+
+/* contact section */
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 50px 0;
 }
 
 
@@ -170,7 +182,7 @@ a {
     width: 90%;
   }
 
-  .gallery{
+  .gallery, .contact{
     grid-template-columns: 1fr;
   }
 
