@@ -18,6 +18,9 @@ body {
 ========common css=======
 ======================= */
 
+img{
+  max-width: 100%;
+}
 .highlight {
   color: #e3a446;
 }
@@ -54,9 +57,8 @@ a {
   color: #e3a446;
 }
 .card {
-  width: 60%;
+  
   padding: 30px;
-  margin: 20px auto;
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -88,4 +90,99 @@ a {
 }
 
 
+/* Header section */
 
+.header{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.header > div{
+  width: 45%;
+}
+
+.header img{
+  width: 60%;
+}
+
+.header-left{
+  margin-right: 50px;
+}
+
+
+/* Features section */
+
+.features{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.features > div{
+  width: 40%;
+  margin: 20px 0;
+}
+
+
+/* gallery section */
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.gallery img{
+  border: 3px solid #a16916;
+  height: 200px;
+  width: 100%;
+}
+
+
+
+.flex-grow{
+  display: flex;
+  margin: 5rem;
+}
+.flex-grow > div{
+  width: 400px;
+  flex-shrink: 0;
+}
+
+/* Media queries */
+@media (max-width: 576px) {
+  body{
+    padding: 10px;
+  }
+  .header > div{
+    width: 100%;
+  }
+  .header-left{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .header-right{
+    display: flex;
+    justify-content: center;
+  }
+
+  .features > div{
+    width: 90%;
+  }
+
+  .gallery{
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (min-width:576px) and (max-width:776px) {
+
+  .header > div{
+    width: 100%;
+  }
+  .gallery{
+    grid-template-columns: 1fr 1fr;
+  }
+}
